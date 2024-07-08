@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-width: 500px;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: #000;
+}
+
+.navbar {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  font-size: 1rem;
+  width: 100%;
+  z-index: 900;
+}
+
+.navbarContr {
+  width: 100%;
+  position: relative;
+}
+
+#navbarLogo {
+  position: absolute;
+  left: max(10px, 25% - 150px);
+  width: 150px;
+  height: 150px;
+  transition: left 0.2s;
+}
+#navbarLogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.topPartNavbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #B50014;
+  font-size: 14.5px;
+}
+
+@media screen and (max-width: 1400px) {
+  .topPartNavbar {
+    justify-content: end;
+  }
+}
+.menu {
+  overflow: hidden;
+  width: 80%;
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 1185px) {
+  .menu {
+    padding-right: max(10px, 10% - 150px);
+  }
+}
+.navbarMenu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+}
+.navbarMenu .navbarItem {
+  margin: 0.7%;
+  text-wrap: nowrap;
+  list-style: none;
+  height: 100%;
+}
+.navbarMenu .navbarItem .navbarLinks {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbarItemPDF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.navbarItemPDF img {
+  margin-right: 4px;
+}
+
+.bottomNavbarContr {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 30px;
+  background-color: #252525;
+  padding-right: 15px;
+  font-size: 14px;
+  padding: 5px 11% 5px 0;
+}
+.bottomNavbarContr .clockIconContr {
+  margin-right: 8px;
+}
+.bottomNavbarContr p {
+  font-weight: 600;
+}
+.bottomNavbarContr span {
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+/* @media screen and(max-width: 900px){
+  .navbar{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+  }
+} */
+.sliderContr {
+  width: 100%;
+  height: 600px;
+}
+.sliderContr img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=mobile.css.map */
