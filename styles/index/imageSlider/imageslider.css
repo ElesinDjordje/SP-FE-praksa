@@ -1,4 +1,5 @@
-.sliderContr {
+.sliderContr .sliderImgsContr {
+  overflow: hidden;
   position: relative;
   width: 100%;
   height: 680px;
@@ -43,6 +44,10 @@
   transform: translate(-50%, 0);
   width: 20%;
 }
+.sliderControlsContr button {
+  background: none;
+  border: none;
+}
 .sliderControlsContr .sliderArrow {
   border: none;
   border-radius: 50%;
@@ -55,15 +60,19 @@
 .sliderControlsContr .sliderArrow:hover {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
-.sliderControlsContr .sliderCircle {
+.sliderControlsContr .indicator {
   border: none;
   border-radius: 50%;
   width: 12px;
   height: 12px;
   margin: 0 7px;
   transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.7);
 }
-.sliderControlsContr .sliderCircle:hover {
+.sliderControlsContr .indicator.selected {
+  background: #B50014;
+}
+.sliderControlsContr .indicator:hover {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
   scale: 0.9;
 }/*# sourceMappingURL=imageslider.css.map */

@@ -1,0 +1,144 @@
+.cardCarouselContr {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 1.5%;
+  position: relative;
+}
+.cardCarouselContr .carouselCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #212121;
+  transition: all 0.3s ease-in-out;
+  font-size: 11px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 0 30px;
+}
+.cardCarouselContr .carouselCard p {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+.cardCarouselContr .carouselCard .personName {
+  font-weight: 400;
+  margin-bottom: 0;
+  opacity: 0.5;
+}
+.cardCarouselContr .carouselCard img {
+  display: none;
+}
+.cardCarouselContr .carouselCard span {
+  display: none;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 12px;
+}
+.cardCarouselContr .carouselCard.active {
+  width: 430px;
+  height: 415px;
+  background: #333;
+  position: relative;
+}
+.cardCarouselContr .carouselCard.active p {
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 16px;
+  opacity: 1;
+}
+.cardCarouselContr .carouselCard.active img {
+  display: block;
+  margin-bottom: 13px;
+}
+.cardCarouselContr .carouselCard.active .personName {
+  font-weight: 400;
+  margin-top: 40px;
+}
+.cardCarouselContr .carouselCard.active .personPosition {
+  display: block;
+}
+.cardCarouselContr .mainCardElementsContr {
+  position: absolute;
+  /*  top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); */
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+.cardCarouselContr .mainCardElementsContr button.arrows {
+  position: absolute;
+  background: none;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.cardCarouselContr .mainCardElementsContr button.arrows:first-of-type {
+  left: 27%;
+}
+.cardCarouselContr .mainCardElementsContr button.arrows:last-of-type {
+  right: 27%;
+}
+.cardCarouselContr .mainCardElementsContr button.arrows:hover {
+  opacity: 1;
+}
+.cardCarouselContr .mainCardElementsContr .navodnici {
+  position: absolute;
+  bottom: -5%;
+  right: 35%;
+}
+
+/* .cardCarouselContr .mainCardElementsContr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 275px;
+  z-index: 100;
+}
+
+.mainCardElementsContr button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.75;
+  transition: all 300ms ease-in-out;
+}
+
+.mainCardElementsContr button:hover {
+  opacity: 1;
+} */
+/* .mainCardElementsContr button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  z-index: -99;
+} */
+/* .mainCardElementsContr button:nth-child(1) {
+  float: left;
+}
+
+.mainCardElementsContr button:nth-child(2) {
+  float: right;
+} *//*# sourceMappingURL=cardSlider.css.map */

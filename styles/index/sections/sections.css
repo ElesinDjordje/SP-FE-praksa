@@ -1,0 +1,412 @@
+.redBtn {
+  width: 185px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background: #B50014;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.redBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 35px;
+  background-color: #fff;
+  z-index: -1;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 0.3s;
+}
+
+.redBtn:hover {
+  color: #333;
+  font-weight: 500;
+  border-color: #FF0000;
+}
+
+.redBtn:hover::before {
+  width: 100%;
+}
+
+.whiteBtn {
+  width: 185px;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  border: 1px solid #FF0000;
+  border-radius: 30px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.whiteBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 35px;
+  background-color: #FF0000;
+  z-index: -1;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 0.3s;
+}
+
+.whiteBtn:hover {
+  color: #fff;
+  font-weight: 500;
+  border-color: #fff;
+}
+
+.whiteBtn:hover::before {
+  width: 100%;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  padding: 80px 0;
+}
+.section1 .section1LeftSideContr {
+  width: 50%;
+  padding: 0 100px 0 200px;
+}
+.section1 .section1LeftSideContr h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+}
+.section1 .section1LeftSideContr h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.section1 .section1LeftSideContr p {
+  font-size: 1rem;
+  line-height: 24px;
+  opacity: 0.6;
+}
+.section1 .section1LeftSideContr button:first-of-type {
+  margin-top: 80px;
+  margin-right: 12px;
+}
+.section1 .section1RightSideContr {
+  width: 50%;
+}
+.section1 .section1RightSideContr .section1MainImg {
+  width: 60%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section1 .section1RightSideContr .imgCollageContr {
+  width: 70%;
+  flex-wrap: nowrap;
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 642px;
+}
+.section2 .section2LeftSideContr {
+  width: 50%;
+  background: #A62120;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* lign-items: center; */
+  justify-content: center;
+  padding: 0 250px;
+}
+.section2 .section2LeftSideContr h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 30px;
+  align-self: center;
+}
+.section2 .section2LeftSideContr ul {
+  font-weight: 300;
+  line-height: 30px;
+  align-self: center;
+}
+.section2 .section2LeftSideContr button {
+  margin-top: 30px;
+  align-self: start;
+}
+.section2 .section2RightSideContr {
+  width: 50%;
+  height: 100%;
+}
+.section2 .section2RightSideContr img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 0 180px 0;
+}
+.section3 .section3TextContr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 420px;
+}
+.section3 .section3TextContr h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 14px;
+}
+.section3 .section3TextContr h4 {
+  margin-bottom: 40px;
+  line-height: 25px;
+  font-size: 22px;
+}
+.section3 .section3TextContr p {
+  margin-top: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.section3 .section3TextContr button {
+  margin-top: 50px;
+}
+.section3 .section3CollageContr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  width: 65%;
+}
+.section3 .section3CollageContr img {
+  width: 100%;
+  transition: all 0.3s;
+}
+.section3 .section3CollageContr img:hover {
+  scale: 1.1;
+}
+
+.dividerContr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  height: 80px;
+  margin-bottom: 60px;
+}
+.dividerContr img {
+  width: 72px;
+  height: 72px;
+  margin: 0 10px;
+}
+.dividerContr span {
+  height: 1px;
+  width: 100%;
+  background-color: #535353;
+}
+
+.section4 {
+  color: #fff;
+}
+.section4 .section4Top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+.section4 .section4Top .section4TopLeft {
+  width: 50%;
+  height: 100%;
+}
+.section4 .section4Top .section4TopLeft img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section4 .section4Top .section4TopRight {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0 220px 0 100px;
+  width: 50%;
+  height: 100%;
+  background-color: #A62120;
+}
+.section4 .section4Top .section4TopRight h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 12px;
+}
+.section4 .section4Top .section4TopRight h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.section4 .section4Top .section4TopRight p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.6;
+}
+.section4 .section4Top .section4TopRight p:last-of-type {
+  margin-top: 12px;
+}
+.section4 .section4Bottom {
+  width: 100%;
+  height: 540px;
+  position: relative;
+}
+.section4 .section4Bottom img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section4 .section4Bottom .section4BottomAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section4 .section4Bottom .section4BottomAbsolute h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.section5 .section5TopContr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px;
+}
+.section5 .section5TopContr .section5TopLeft {
+  width: 50%;
+  padding: 0 50px 0 200px;
+}
+.section5 .section5TopContr .section5TopRight {
+  width: 50%;
+  padding: 0 150px 0 100px;
+}
+.section5 .section5TopContr .section5TopRight h2 {
+  line-height: 50px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.section5 .section5MiddleContr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12%;
+  margin: 100px 0;
+}
+.section5 .section5MiddleContr h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.section5 .section5MiddleContr .achievementContr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+}
+.section5 .section5MiddleContr .achievementContr img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section5 .section5MiddleContr .achievementContr img.unevenImg {
+  width: 137px;
+  height: 120px;
+}
+.section5 .section5MiddleContr .achievementContr p {
+  margin-top: 15px;
+  width: 150px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-wrap: wrap;
+  opacity: 0.6;
+}
+.section5 .section5BottomContr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.section5 .section5BottomContr span:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+.section5 .section5BottomContr h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 40px;
+}
+.section5 .section5BottomContr .cardSliderContr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}/*# sourceMappingURL=sections.css.map */
