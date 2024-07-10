@@ -49,6 +49,8 @@
   height: 415px;
   background: #333;
   position: relative;
+  opacity: 1;
+  z-index: 99;
 }
 .cardCarouselContr .carouselCard.active p {
   font-weight: 300;
@@ -67,11 +69,23 @@
 .cardCarouselContr .carouselCard.active .personPosition {
   display: block;
 }
+.cardCarouselContr .carouselCard.active .carouselCard.prev {
+  z-index: 2;
+  opacity: 0.7;
+  transform: translate(-125%, -50%);
+}
+.cardCarouselContr .carouselCard.active .carouselCard.next {
+  /*       order: 3;
+  */
+  z-index: 2;
+  opacity: 0.7;
+  transform: translate(25%, -50%);
+}
 .cardCarouselContr .mainCardElementsContr {
   position: absolute;
   /*  top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%); */
+  left: 50%;
+  transform: translate(-50%, -50%); */
   z-index: 100;
   width: 100%;
   height: 100%;

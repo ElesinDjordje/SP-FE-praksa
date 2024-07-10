@@ -11,13 +11,19 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="/styles/index/navbar/index.css"
+      href="/styles/index/general.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="/styles/index/navbar/mobile.css"
+      href="/styles/index/navbar/navbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/styles/index/navbar/navbarMobile.css"
     />
     <link
       rel="stylesheet"
@@ -67,11 +73,7 @@
           <img src="/media/logo.png" alt="" />
         </a>
         <div class="topPartNavbar">
-          <div class="navbarToggle" id="mobileMenu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+          
 
           <div class="menu">
             <ul class="navbarMenu">
@@ -79,10 +81,10 @@
                 <a href="/" class="navbarLinks">Die Metzgerei</a>
               </li>
               <li class="navbarItem">
-                <a href="/tech.html" class="navbarLinks">Dry Aged</a>
+                <a href="/html/index.html" class="navbarLinks">Dry Aged</a>
               </li>
               <li class="navbarItem">
-                <a href="/" class="navbarLinks">Fleischversand</a>
+                <a href="/html/index.html" class="navbarLinks">Fleischversand</a>
               </li>
               <li class="navbarItem">
                 <a href="/" class="navbarLinks">Events/Kurse</a>
@@ -99,11 +101,20 @@
               <li class="navbarItem">
                 <a href="/" class="navbarLinks">Kontakt</a>
               </li>
-              <li class="navbarItemPDF">
-                <img src="/media/Frame.png" alt="" />
+             <!--  <li class="navbarItemPDF">
+                <img src="/media/Frame.svg" alt="" />
                 <span>dowload</span>
-              </li>
+              </li> -->
             </ul>
+          </div>
+          <div class="navbarItemPDF">
+            <img src="/media/Frame.svg" alt="" />
+            <span>dowload</span>
+          </div>
+          <div class="navbarToggle" id="mobileMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
           <!-- <div class="pdfContr">
           <i class="fa-solid fa-file-pdf"></i>
@@ -123,17 +134,39 @@
       </div>
     </nav>
 
-    <!--SLIDER-->
+    <!--PHOTO SLIDER-->
     <section class="sliderContr">
       <div class="sliderImgsContr">
-        <img src="/media/imageSlider/image 14.jpg" alt="" />
-        <img src="/media/imageSlider/dennis-klein-FzB_512zvP0-unsplash.jpg" alt="" />
-        <img src="/media/imageSlider/egor-myznik-97QVuzn7MUo-unsplash.jpg" alt="" />
-        <img src="/media/imageSlider/jaunathan-gagnon-o_cNglu7JUA-unsplash.jpg" alt="" />
-        <img src="/media/imageSlider/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg" alt="" />
+        <div class="sliderItem">
+          <img src="/media/imageSlider/image 14.jpg" alt="" />
+        </div>
+        <div class="sliderItem">
+          <img
+            src="/media/imageSlider/dennis-klein-FzB_512zvP0-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="sliderItem">
+          <img
+            src="/media/imageSlider/egor-myznik-97QVuzn7MUo-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="sliderItem">
+          <img
+            src="/media/imageSlider/jaunathan-gagnon-o_cNglu7JUA-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="sliderItem">
+          <img
+            src="/media/imageSlider/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg"
+            alt=""
+          />
+        </div>
       </div>
       <div class="sliderModalContr">
-        <h1>Heiko Brath Metzgermesiter</h1>
+        <h1>Heiko Brath Metzgermeister</h1>
         <p>
           Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
           argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol
@@ -142,7 +175,7 @@
       </div>
 
       <div class="sliderControlsContr">
-        <button id="arrowLeft">
+        <button id="sliderArrowLeft">
           <img class="sliderArrow" src="/media/arrowLeft.png" alt="" />
         </button>
         <div class="indicator selected" data-index-photo="1"></div>
@@ -151,7 +184,7 @@
         <div class="indicator" data-index-photo="4"></div>
         <div class="indicator" data-index-photo="5"></div>
 
-        <button>
+        <button id="sliderArrowRight">
           <img class="sliderArrow" src="/media/arrowRight.png" alt="" />
         </button>
       </div>
@@ -325,48 +358,62 @@
       <div class="section5BottomContr">
         <span>Empfehlungs</span>
         <h2>Was die Leute über uns sagen</h2>
-        <div class="cardCarouselContr">
-          <div class="carouselCard">
-            <img class="carouselIcon" src="/media/grillkurs_icon.svg" alt="" />
-            <img class="zvezdice" src="/media/zvezdice.svg" alt="" />
-            <p>
-              Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
-              Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim
-              Stuttgart.
-            </p>
-            <p class="personName">Maria Kartofeln</p>
-            <span class="personPosition">Koch</span>
-          </div>
-          <div class="carouselCard active">
-            <img class="carouselIcon" src="/media/grillkurs_icon.svg" alt="" />
-            <img class="zvezdice" src="/media/zvezdice.svg" alt="" />
-            <p>
-              Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod
-              tempor Stuttgart ut labore et dolore magna Luftballons Ut
-              Turnbeutel nostrud exercitation ullamco .
-            </p>
-            <p class="personName">Halling Tobias</p>
-            <span class="personPosition">Koch</span>
-          </div>
-          <div class="carouselCard">
-            <img class="carouselIcon" src="/media/grillkurs_icon.svg" alt="" />
-            <img class="zvezdice" src="/media/zvezdice.svg" alt="" />
-            <p>
-              Achtung fur atine indoctum complectitur HugoClub Mate mea meliore
-              denique nominavi id. Ohrwurm expetenda nam an, his ei Reise
-              euismod assentior.
-            </p>
-            <p class="personName">Rene Weinstein</p>
-            <span class="personPosition">Koch</span>
-          </div>
-          <div class="mainCardElementsContr">
-            <button class="arrows">
-              <img class="arrowLeft" src="/media/arrowLeft.png" alt="" />
-            </button>
-            <button class="arrows">
-              <img class="arrowRight" src="/media/arrowRight.png" alt="" />
-            </button>
-            <img class="navodnici" src="/media/znak.svg" alt="" />
+        <div class="carouselContr">
+          <div class="cardCarouselContr">
+            <div class="carouselCard prev">
+              <img
+                class="carouselIcon"
+                src="/media/grillkurs_icon.svg"
+                alt=""
+              />
+              <img class="zvezdice" src="/media/zvezdice.svg" alt="" />
+              <p>
+                Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
+                Schnitzel aute irure dolor in reprehenderit Guten Tag mollit
+                anim Stuttgart.
+              </p>
+              <p class="personName">Maria Kartofeln</p>
+              <span class="personPosition">Koch</span>
+            </div>
+            <div class="carouselCard active">
+              <img
+                class="carouselIcon"
+                src="/media/grillkurs_icon.svg"
+                alt=""
+              />
+              <img class="zvezdice" src="/media/zvezdice.svg" alt="" />
+              <p>
+                Wiener Schnitzel amet, consectetur Handtasche elit, sed do
+                eiusmod tempor Stuttgart ut labore et dolore magna Luftballons
+                Ut Turnbeutel nostrud exercitation ullamco .
+              </p>
+              <p class="personName">Halling Tobias</p>
+              <span class="personPosition">Koch</span>
+            </div>
+            <div class="carouselCard next">
+              <img
+                class="carouselIcon"
+                src="/media/grillkurs_icon.svg"
+                alt=""
+              />
+              <img class="zvezdice" src="/media/zvezdice.svg" alt="" />
+              <p>
+                Achtung fur atine indoctum complectitur HugoClub Mate mea
+                meliore denique nominavi id. Ohrwurm expetenda nam an, his ei
+                Reise euismod assentior.
+              </p>
+              <p class="personName">Rene Weinstein</p>
+              <span class="personPosition">Koch</span>
+            </div>
+            <div class="mainCardElementsContr">
+              <button class="arrows" id="cardArrowLeft">
+                <img class="arrowLeft" src="/media/arrowLeft.png" alt="" />
+              </button>
+              <button class="arrows" id="cardArrowRight">
+                <img class="arrowRight" src="/media/arrowRight.png" alt="" />
+              </button>
+              <img class="navodnici" src="/media/znak.svg" alt="" />
+            </div>
           </div>
         </div>
         <button class="redBtn">Alle Berichte</button>

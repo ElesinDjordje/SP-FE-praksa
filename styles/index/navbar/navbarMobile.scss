@@ -1,0 +1,125 @@
+$breakpoint1: 1024px;
+$breakpoint2: 768px;
+
+@media screen and (max-width: 1400px) {
+  .topPartNavbar {
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 1185px) {
+  .navbarItemPDF {
+    span {
+      display: none;
+    }
+  }
+  .topPartNavbar {
+    padding-right: calc(max(10px, 20% - 150px));
+  }
+}
+
+@media screen and (max-width: $breakpoint1) {
+  .topPartNavbar {
+    justify-content: end;
+    padding-right: 20px;
+    position: relative;
+
+    .navbarItemPDF {
+      margin-right: 30px;
+      span {
+        margin-left: 10px;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+    .navbarToggle {
+      display: inline-block;
+      cursor: pointer;
+
+      .bar {
+        width: 40px;
+        height: 5px;
+        margin: 8px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+        display: block;
+        border-radius: 3px;
+      }
+    }
+    #mobileMenu.isActiveMenu .bar:nth-child(2) {
+      opacity: 0;
+    }
+    #mobileMenu.isActiveMenu .bar:nth-child(1) {
+      transform: translateY(13px) rotate(45deg);
+    }
+    #mobileMenu.isActiveMenu .bar:nth-child(3) {
+      transform: translateY(-13px) rotate(-45deg);
+    }
+    .menu {
+      width: 100vw;
+      height: 100%;
+    }
+    .navbarMenu {
+      z-index: -1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: -1000px;
+      left: 0;
+      right: 0;
+      transition: all 0.3s;
+      height: auto;
+
+      .navbarItemPDF {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5%;
+        height: 100%;
+        img {
+          margin-right: 12px;
+        }
+        span {
+          display: inline-block;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+      .navbarItem{
+        margin: 0;
+        width: 100%;
+        height: 50px;
+        font-weight: 700;
+        
+        border-bottom: 1px solid #252525;
+      }
+      
+
+      .navbarItem:hover{
+        background: #252525;
+        
+      }
+      .navbarItem:last-of-type:hover{
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+    }
+    .navbarMenu.activeMenu {
+      width: 100%;
+      background-color: #131313;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.3s;
+      z-index: 900;
+      height: auto;
+      font-size: 1.4rem;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+}

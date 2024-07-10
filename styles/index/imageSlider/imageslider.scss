@@ -1,22 +1,35 @@
-.sliderContr{
 
+.sliderContr{
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+  height: 680px;
 
   .sliderImgsContr{
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 680px;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    display: flex;
+    
+    .sliderItem{
+      width: 20%;
+      height: 100%;
+      img{
+        -webkit-user-drag: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
-  img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 }
 
 .sliderModalContr{
-  z-index: 900;
+  z-index: 800;
   position: absolute;
   left: 0;
   top: 50%;
