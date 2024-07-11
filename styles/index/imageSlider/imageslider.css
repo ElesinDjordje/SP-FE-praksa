@@ -56,7 +56,7 @@
   bottom: 50px;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 20%;
+  width: 250px;
 }
 .sliderControlsContr button {
   background: none;

@@ -50,6 +50,12 @@ footer{
       span{
         text-wrap: nowrap;
       }
+      .rightFooterImgContr{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+      }
     }
   }
   .bottomFooter{

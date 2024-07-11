@@ -47,6 +47,12 @@ footer .mainFooter .rightFooterSection {
 footer .mainFooter .rightFooterSection span {
   text-wrap: nowrap;
 }
+footer .mainFooter .rightFooterSection .rightFooterImgContr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%;
+}
 footer .bottomFooter {
   display: flex;
   align-items: center;

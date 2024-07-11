@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const sliderLeftArrow = document.getElementById("sliderArrowLeft");
   const sliderRightArrow = document.getElementById("sliderArrowRight");
   const indicators = document.querySelectorAll(".indicator");
+  const sliderModalContr = document.querySelector(".sliderModalContr");
   const sliderModalTitle = document.querySelector(".sliderModalContr h1");
   const sliderModalText = document.querySelector(".sliderModalContr p");
 
@@ -12,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const carouselCards = document.querySelectorAll(".carouselCard");
   const cardLeftArrow = document.getElementById("cardArrowLeft");
   const cardRightArrow = document.getElementById("cardArrowRight");
- 
 
   //IMAGE SLIDER
   let currentIndex = 0;
@@ -90,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
   } */
   console.log(cardCarouselContr);
 
-
   carouselCards.forEach((card, index) => {
     console.log(card, index);
     if (index === 0) {
@@ -102,17 +101,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  
-
-  cardLeftArrow.addEventListener("click", ()=>{
+  cardLeftArrow.addEventListener("click", () => {
     prevCard();
   });
 
-  cardRightArrow.addEventListener("click", ()=>{
+  cardRightArrow.addEventListener("click", () => {
     nextCard();
   });
 
-  function nextCard(){
+  function nextCard() {
     let items = Array.from(carouselCards);
     console.log(items);
     let lastCard = items.pop();
@@ -159,15 +156,47 @@ document.addEventListener("DOMContentLoaded", function () {
     carouselCards[prevCard].classList.add("prev");
     carouselCards[nextCard].classList.add("next");
   } */
+
+  //NAVBAR MENU
+  const menu = document.getElementById("mobileMenu");
+  const menuLinks = document.querySelector(".navbarMenu");
+
+  console.log(menuLinks);
+
+  menu.addEventListener("click", function () {
+    menu.classList.toggle("isActiveMenu");
+    menuLinks.classList.toggle("activeMenu");
+  });
+
+  //DARK MODE
+
+  const darkModeCb = document.getElementById("darkModeCb");
+  const darkModeElements = document.querySelectorAll(".darkTheme");
+  const darkCards = document.querySelectorAll(".darkCard");
+
+  darkModeCb.addEventListener("click", changeTheme);
+
+  function changeTheme() {
+    if(darkModeCb.checked){
+      darkModeElements.forEach((element)=>{
+        element.style.background = "#fff";
+        element.style.color = "#111";
+      });
+      darkCards.forEach((card)=>{
+        card.style.boxShadow = "1px 2px 37px -7px rgba(0,0,0,0.75)";
+        card.style.background = "#f0f0f0"
+        card.style.color = "#111";
+      });
+    }else{
+      darkModeElements.forEach((element) =>{
+        element.style.background = "#000";
+        element.style.color = "#fff";
+      });
+      darkCards.forEach((card)=>{
+        card.style.boxShadow = "none";
+        card.style.background = "#333"
+        card.style.color = "#fff";
+      });
+    }
+  }
 });
-
-//NAVBAR MENU
-const menu = document.getElementById('mobileMenu');
-const menuLinks = document.querySelector('.navbarMenu');
-
-console.log(menuLinks);
-
-menu.addEventListener('click', function(){
-  menu.classList.toggle('isActiveMenu');
-  menuLinks.classList.toggle('activeMenu');
-})

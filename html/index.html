@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Brath - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/media/pig-7-64.png">
 
     <!--STYLES-->
     <link
@@ -20,39 +21,39 @@
       href="/styles/index/navbar/navbar.css"
     />
     <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="/styles/index/navbar/navbarMobile.css"
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="/styles/index/imageSlider/imageslider.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="/styles/index/sections/sections.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="/styles/index/cardSlider/cardSlider.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="/styles/index/footer/footer.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="/styles/index/imageSlider/imageslider.css"
+      href="/styles/index/mobile/mobile.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="/styles/index/sections/sections.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="/styles/index/cardSlider/cardSlider.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="/styles/index/footer/footer.css"
-    />
-
+    
     <!--ICONS-->
     <script
-      src="https://kit.fontawesome.com/84489ec29b.js"
+    src="https://kit.fontawesome.com/84489ec29b.js"
       crossorigin="anonymous"
     ></script>
 
@@ -64,7 +65,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="darkTheme">
     <!--HEADER-->
 
     <nav class="navbar">
@@ -76,7 +77,7 @@
           
 
           <div class="menu">
-            <ul class="navbarMenu">
+            <ul class="navbarMenu darkTheme">
               <li class="navbarItem">
                 <a href="/" class="navbarLinks">Die Metzgerei</a>
               </li>
@@ -121,7 +122,14 @@
           <p>dowload</p>
         </div> -->
         </div>
-        <div class="bottomNavbarContr">
+        <div class="bottomNavbarContr darkTheme">
+          <div class="darkModeContr">
+            <span>Dark Mode: </span>
+            <label class="switch">
+              <input id="darkModeCb" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
           <div class="clockIconContr">
             <img src="/media/clock.svg" alt="" />
           </div>
@@ -165,8 +173,8 @@
           />
         </div>
       </div>
-      <div class="sliderModalContr">
-        <h1>Heiko Brath Metzgermeister</h1>
+      <div class="sliderModalContr darkTheme">
+        <h1 >Heiko Brath Metzgermeister</h1>
         <p>
           Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
           argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol
@@ -190,11 +198,11 @@
       </div>
     </section>
 
-    <section class="section1">
+    <section class="section1 darkTheme">
       <div class="section1LeftSideContr">
         <h1>Dry Aged</h1>
-        <h2>Alte Wutz, Dry Aged</h2>
-        <p>
+        <h2 >Alte Wutz, Dry Aged</h2>
+        <p >
           Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
           Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad minim
           veniam, Turnbeutel nostrud exercitation ullamco laboris nisi Sprechen
@@ -214,9 +222,15 @@
           <img class="section1MainImg" src="/media/mainImgDryAged.svg" alt="" />
         </div>
         <div class="imgCollageContr">
-          <img class="section1CollageImg" src="/media/dryImg1.png" alt="" />
-          <img class="section1CollageImg" src="/media/dryImg2.png" alt="" />
-          <img class="section1CollageImg" src="/media/dryImg3.png" alt="" />
+          <div>
+            <img class="section1CollageImg" src="/media/dryImg1.png" alt="" />
+          </div>
+          <div>
+            <img class="section1CollageImg" src="/media/dryImg2.png" alt="" />
+          </div>
+          <div>
+            <img class="section1CollageImg" src="/media/dryImg3.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -242,7 +256,7 @@
     </section>
 
     <section class="section3">
-      <div class="section3TextContr">
+      <div class="section3TextContr darkTheme">
         <h2>Das Handwerk</h2>
         <h4>alles über unsere Hausgemachte Produkte</h4>
         <p>
@@ -260,7 +274,7 @@
         </p>
         <button class="redBtn">Das Handwerk</button>
       </div>
-      <div class="dividerContr">
+      <div class="dividerContr darkTheme">
         <span></span>
         <img src="/media/Group.png" alt="" />
         <span></span>
@@ -313,54 +327,57 @@
     <section class="section5">
       <div class="section5TopContr">
         <div class="section5TopLeft">
-          <img src="/media/Group 458.png" alt="" />
+          <img src="/media/genussnetz logo 1.svg" alt="" />
         </div>
-        <div class="section5TopRight">
-          <h2>Metzgerei Brath ist Mitglied im Genussnetzwerk</h2>
+        <div class="section5TopRight ">
+          <h2 class="darkTheme">Metzgerei Brath ist Mitglied im Genussnetzwerk</h2>
           <button class="redBtn">Gehen zu site</button>
         </div>
       </div>
-      <div class="dividerContr">
+      <div class="dividerContr darkTheme">
         <span></span>
         <img src="/media/Group.png" alt="" />
         <span></span>
       </div>
 
-      <div class="section5MiddleContr">
+      <div class="section5MiddleContr darkTheme">
         <h1>Auszeichnungen</h1>
-        <div class="achievementContr">
-          <img src="/media/achievements/nagrada1.svg" alt="" />
-          <p>Tollit argumentum genau Saepe lobortis</p>
-        </div>
-        <div class="achievementContr">
-          <img
-            class="unevenImg"
-            src="/media/achievements/nagrada2.svg"
-            alt=""
-          />
-          <p>Schneewittchen denique</p>
-        </div>
-        <div class="achievementContr">
-          <img src="/media/achievements/nagrada3.svg" alt="" />
-          <p>Grimms Märchen expetenda</p>
-        </div>
-        <div class="achievementContr">
-          <img src="/media/achievements/nagrada4.svg" alt="" />
-          <p>Mettwurst mei ullum gloriatur.</p>
+        <div class="allAchievementsContr">
+          <div class="achievementContr">
+            <img src="/media/achievements/nagrada1.svg" alt="" />
+            <p>Tollit argumentum genau Saepe lobortis</p>
+          </div>
+          <div class="achievementContr">
+            <img
+              class="unevenImg"
+              src="/media/achievements/nagrada2.svg"
+              alt=""
+            />
+            <p>Schneewittchen denique</p>
+          </div>
+          <div class="achievementContr">
+            <img src="/media/achievements/nagrada3.svg" alt="" />
+            <p>Grimms Märchen expetenda</p>
+          </div>
+          <div class="achievementContr">
+            <img src="/media/achievements/nagrada4.svg" alt="" />
+            <p>Mettwurst mei ullum gloriatur.</p>
+          </div>
+
         </div>
       </div>
-      <div class="dividerContr">
+      <div class="dividerContr darkTheme">
         <span></span>
         <img src="/media/Group.png" alt="" />
         <span></span>
       </div>
 
-      <div class="section5BottomContr">
+      <div class="section5BottomContr darkTheme">
         <span>Empfehlungs</span>
         <h2>Was die Leute über uns sagen</h2>
         <div class="carouselContr">
           <div class="cardCarouselContr">
-            <div class="carouselCard prev">
+            <div class="carouselCard prev darkCard">
               <img
                 class="carouselIcon"
                 src="/media/grillkurs_icon.svg"
@@ -375,7 +392,7 @@
               <p class="personName">Maria Kartofeln</p>
               <span class="personPosition">Koch</span>
             </div>
-            <div class="carouselCard active">
+            <div class="carouselCard active darkCard">
               <img
                 class="carouselIcon"
                 src="/media/grillkurs_icon.svg"
@@ -390,7 +407,7 @@
               <p class="personName">Halling Tobias</p>
               <span class="personPosition">Koch</span>
             </div>
-            <div class="carouselCard next">
+            <div class="carouselCard next darkCard">
               <img
                 class="carouselIcon"
                 src="/media/grillkurs_icon.svg"
@@ -421,7 +438,7 @@
     </section>
     <!--FOOTER-->
 
-    <footer>
+    <footer >
       <div class="mainFooter">
         <div class="leftFooterSection">
           <!--           <img src="/media/  .png" alt="" /> -->
@@ -445,10 +462,13 @@
         </div>
         <div class="rightFooterSection">
           <span>Besuchen Sie uns auf:</span>
-          <img src="/media/socials/Group 613.png" alt="" />
-          <img src="/media/socials/Group 616.png" alt="" />
-          <img src="/media/socials/Group 627.png" alt="" />
-          <img src="/media/socials/Group 610.png" alt="" />
+          <div class="rightFooterImgContr">
+            <img src="/media/socials/Group 613.png" alt="" />
+            <img src="/media/socials/Group 616.png" alt="" />
+            <img src="/media/socials/Group 627.png" alt="" />
+            <img src="/media/socials/Group 610.png" alt="" />
+            
+          </div>
         </div>
       </div>
       <div class="bottomFooter">

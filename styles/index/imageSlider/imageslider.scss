@@ -1,4 +1,7 @@
 
+$breakpoint1: 1024px;
+$breakpoint2: 768px;
+
 .sliderContr{
   position: relative;
   overflow: hidden;
@@ -61,7 +64,7 @@
   bottom: 50px;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 20%;
+  width: 250px;
 
   button{
     background: none;
