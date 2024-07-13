@@ -90,6 +90,7 @@
     width: 100%;
     height: 50px;
     font-weight: 700;
+    background: #000;
     border-bottom: 1px solid #252525;
   }
   .topPartNavbar .navbarMenu .navbarItem:hover {
@@ -320,6 +321,13 @@
   footer .mainFooter .rightFooterSection span {
     margin-bottom: 10px;
   }
+  /*animations*/
+  .section1 img, .section3 img, .section5 .section5TopContr img, .section5 .section5MiddleContr img {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 500px;
+  }
 }
 @media screen and (max-width: 768px) {
   .navbar .bottomNavbarContr {
@@ -406,5 +414,15 @@
     flex-direction: column;
     padding: 20px 0;
     line-height: 30px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
   }
 }/*# sourceMappingURL=mobile.css.map */

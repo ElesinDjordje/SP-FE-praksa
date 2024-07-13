@@ -66,6 +66,19 @@
     />
   </head>
   <body class="darkTheme">
+    <div class="popUpScreenContr">
+      <div class="popUpContr">
+        <div class="xMarkContr">
+          <button id="popUpXMark"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="popUpTextContr">
+          <h1>Lorem ipsum</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat perspiciatis officia optio distinctio, velit maxime consectetur expedita libero fugit nobis?</p>
+          <button  id="subscribeBtn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="scrollWatcher"></div>
     <!--HEADER-->
 
     <nav class="navbar">
@@ -124,7 +137,7 @@
         </div>
         <div class="bottomNavbarContr darkTheme">
           <div class="darkModeContr">
-            <span>Dark Mode: </span>
+            <span>Light Mode: </span>
             <label class="switch">
               <input id="darkModeCb" type="checkbox">
               <span class="slider round"></span>
@@ -143,7 +156,7 @@
     </nav>
 
     <!--PHOTO SLIDER-->
-    <section class="sliderContr">
+    <section class="sliderContr parallax">
       <div class="sliderImgsContr">
         <div class="sliderItem">
           <img src="/media/imageSlider/image 14.jpg" alt="" />
@@ -235,7 +248,7 @@
       </div>
     </section>
 
-    <section class="section2">
+    <section class="section2 parallax">
       <div class="section2LeftSideContr">
         <h1>Buchen Sie den Grillkurs jetzt</h1>
         <ul>
@@ -295,7 +308,7 @@
       </div>
     </section>
 
-    <section class="section4">
+    <section class="section4 parallax">
       <div class="section4Top">
         <div class="section4TopLeft">
           <img src="/media/section4TopImg.jpg" alt="" />
@@ -482,5 +495,6 @@
       </div>
     </footer>
     <script src="/scripts/index.js"></script>
+    <script type="module" src="/scripts/module.js"></script>
   </body>
 </html>

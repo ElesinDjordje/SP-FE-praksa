@@ -98,6 +98,7 @@ $left-subtract: 100px;
     text-wrap: nowrap;
     list-style: none;
     height: 100%;
+    transition: all 0.3s;
 
     .navbarLinks{
       text-decoration: none ;
@@ -105,19 +106,21 @@ $left-subtract: 100px;
       
     }
   }
+  .navbarItem:hover{
+    opacity: 0.8;
+  }
 }
 
 
 
 .bottomNavbarContr{
-  
   display: flex;
   color: #fff;
   align-items: center;
   justify-content: end;
   width: 100%;
   height: 30px;
-  background-color: #252525;
+  background-color: #000;
   padding-right: 15px;
   font-size: 14px;
   padding: 5px 11% 5px 0;

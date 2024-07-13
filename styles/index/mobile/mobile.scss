@@ -100,7 +100,7 @@ $breakpoint2: 768px;
         width: 100%;
         height: 50px;
         font-weight: 700;
-        
+        background: #000;
         border-bottom: 1px solid #252525;
       }
       
@@ -209,6 +209,7 @@ $breakpoint2: 768px;
       width: 100%;
       order: 1;
 
+      
       .mainImgContr{
         width: 100%;
         .section1MainImg{
@@ -369,6 +370,17 @@ $breakpoint2: 768px;
       }
     }
   }
+
+  /*animations*/
+
+  .section1, .section3, .section5 .section5TopContr, .section5 .section5MiddleContr{
+    img{
+      animation: fadeIn linear;
+      animation-timeline: view();
+      animation-range-start: cover;
+      animation-range-end: 500px;
+    }
+  }
 }
 
 @media screen and (max-width: $breakpoint2){
@@ -474,5 +486,10 @@ $breakpoint2: 768px;
       line-height: 30px;
     }
   }
+}
+
+@keyframes fadeIn {
+  from{scale: 0.8; opacity: 0;}
+  to{scale: 1; opacity: 1;}
 }
 

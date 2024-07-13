@@ -199,4 +199,17 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+  const popUpScreen = document.querySelector(".popUpScreenContr");
+  window.onload = function(){
+    setTimeout(function(){
+      popUpScreen.style.opacity= "1";
+    }, 5000)
+  }
+
+  const xMark = document.getElementById("popUpXMark");
+  xMark.addEventListener('click', function(){
+    popUpScreen.style.opacity = "0";
+  })
+  
 });
+
